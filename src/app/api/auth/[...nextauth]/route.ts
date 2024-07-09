@@ -5,3 +5,4 @@ import { authOption } from "./option";
 const hendler = NextAuth(authOption)
  export {hendler as GET , hendler as POST}
  
+ 
