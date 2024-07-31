@@ -15,7 +15,7 @@ export async function POST(req: { json: () => PromiseLike<{ messages: any; }> | 
         const { messages } = await req.json();
 
         const response = await openai.create.Chat.Completion({
-            model: 'gpt-3.5-turbo-instruct',
+            model: 'gpt-4-turbo',
             max_tokens: 400,
             stream: true,
             messages: [{ role: "user", content: prompt }],
